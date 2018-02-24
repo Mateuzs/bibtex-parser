@@ -12,9 +12,6 @@ public class    Main {
 
     public static void main(String [] args  ) throws Exception {
 
-      // WORKING EXAMPLE
-        //args = new String []{"-a","Paul Pot","-c","article","-a","Paul Pot","-f","src/main/bibFileExample.txt","-s","*","-o","2",""};
-    args = new String [] {"-h"};
 
         ArrayList<String>  categories = new ArrayList<>();
         ArrayList<String>  authors = new ArrayList<>();
