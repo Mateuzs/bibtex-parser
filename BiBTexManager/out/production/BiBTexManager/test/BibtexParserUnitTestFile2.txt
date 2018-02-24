@@ -1,5 +1,0 @@
-"jabadaba dooo"
-
-@STRING{ variable = "test passed:)" }
-
-  { crossref = "whole-set",
