@@ -13,7 +13,8 @@ public class    Main {
     public static void main(String [] args  ) throws Exception {
 
       // WORKING EXAMPLE
-      // args = new String []{"-a","Paul Pot","-c","article","-a","Paul Pot","-f","src/main/bibFileExample.txt","-s","*","-o","2",""};
+        //args = new String []{"-a","Paul Pot","-c","article","-a","Paul Pot","-f","src/main/bibFileExample.txt","-s","*","-o","2",""};
+    args = new String [] {"-h"};
 
         ArrayList<String>  categories = new ArrayList<>();
         ArrayList<String>  authors = new ArrayList<>();
@@ -22,10 +23,11 @@ public class    Main {
         String fileName = "";
         String option = "";
 
-        Getopt g = new Getopt("testprog", args, ":a:c:f:s:o:h:");
-        int c;
+        Getopt g = new Getopt("testprog", args, ":a:c:f:s:o:h");
 
-        while ((c = g.getopt()) != -1)
+        int c = g.getopt();
+
+        do
         {
             switch(c)
             {
@@ -46,18 +48,22 @@ public class    Main {
                     break;
                 case 'h':
                     System.out.println("\nHello in my Bibtex mini Parser program :) here You can find basic options: \n " +
-                                        "-a : take an author \n -c : take a category \n -f : take a file name" +
-                                        "\n -s : take a sign builder for the tables\n -h : show  help \n");
+                                        "-a : takes an author \n -c : takes a category \n -f : takes a file name" +
+                                        "\n -s : takes a sign builder for the tables\n -h : shows  help \n" +
+                                        "\n -o : defines an option of parsing the file:\n" +
+                                        "   1 - present the whole parsed file.\n" +
+                                        "   2 - present filtered entries by given authors.\n" +
+                                        "   3 - present filtered entries by given categories. ");
                     return;
 
                 default:
+
                     throw new IllegalArgumentException("bad syntax of options, please use -h to get to know how use this program :)");
             }
         }
+        while ((c = g.getopt()) != -1);
 
 
-
-        for(String author: authors) System.out.println(author);
 
         BibtexManager manager = new BibtexManager(fileName, categories, authors, sign);
         IManagerVisitor visitor = new ManagerVisitor();
