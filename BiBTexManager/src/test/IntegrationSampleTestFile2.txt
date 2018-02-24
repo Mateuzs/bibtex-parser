@@ -1,0 +1,14 @@
+@ARTICLE{article-full,
+   author = {L[eslie] A. Aamport},
+   title = {The Gnats and Gnus Document Preparation System},
+   journal = {\mbox{G-Animal`s} Journal},
+   volume = 41,
+   yewear = 1973,
+   number = 7,
+   pages = "73+",
+   month = jul,
+   note = "This is a full ARTICLE entry",
+   blabla = "this is blabla",
+}
+
+

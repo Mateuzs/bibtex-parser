@@ -1,0 +1,12 @@
+this is  sample file with random words used to test some methods \ * b
+
+
+example of bibtex entry:
+
+
+@BOOK{book-minimal,
+   author = "Donald E. Knuth",
+   title = "Seminumerical Algorithms",
+   publisher = "Addison-Wesley",
+   year = "1981",
+}
