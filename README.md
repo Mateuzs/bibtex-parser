@@ -8,11 +8,11 @@ The simplest way to try this app is download the jar file and run it from you co
 Basic option this app can take: 
 
 
--a `<`name`>` : takes an author name You want to filter by  
--f <address> : takes the bibtex file address  
--c <category> : takes a category You want to filter by  
--h : shows help  
--o <option_number> : takes an option of presentation parsed file:  
+`-a <name>` : takes an author name You want to filter by  
+`-f <address>` : takes the bibtex file address  
+`-c <category>` : takes a category You want to filter by  
+`-h` : shows help  
+`-o <option_number>` : takes an option of presentation parsed file:  
   1 - shows the whole parsed file  
   2 - filters the file by author name  
   3 - filters the file by category  
