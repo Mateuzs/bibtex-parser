@@ -44,9 +44,10 @@ public class BibtexPresenter {
                 e.printStackTrace();
             }
 
-
         }
 
+
+        System.out.println("\n\n\n\n");
     }
 
 
@@ -186,6 +187,7 @@ public class BibtexPresenter {
                     System.out.print(sign + "\n");
 
                     for (int i = 0; i < N; i++) System.out.print(sign);
+
 
                 }
             }

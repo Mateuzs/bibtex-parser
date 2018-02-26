@@ -24,15 +24,15 @@ public class ManagerVisitor implements IManagerVisitor {
         switch(option){
 
             case("1"):
-                System.out.println("\n\n\n\n\n\t\t\t\t\t\t\t\t\t\t\t***PRESRENTING PARSED FILE***");
+                System.out.println("\n\n\n\n\n\t\t\t\t\t\t\t***PRESRENTING PARSED FILE***");
                 manager.getPresenter().present();
                 break;
             case("2"):
-                System.out.println("\n\n\n\n\n\t\t\t\t\t\t\t\t\t\t\t***PRESRENTING ENTRIES FILTERED BY GIVEN AUTHORS***");
+                System.out.println("\n\n\n\n\n\t\t\t\t\t\t\t***PRESRENTING ENTRIES FILTERED BY GIVEN AUTHORS***");
                 manager.getFilter().filterByAuthors();
                 break;
             case("3"):
-                System.out.println("\n\n\n\n\n\t\t\t\t\t\t\t\t\t\t***PRESRENTING ENTRIES FILTERED BY GIVEN CATEGORIES***");
+                System.out.println("\n\n\n\n\n\t\t\t\t\t\t***PRESRENTING ENTRIES FILTERED BY GIVEN CATEGORIES***");
                 manager.getFilter().filterByCategory();
 
 
