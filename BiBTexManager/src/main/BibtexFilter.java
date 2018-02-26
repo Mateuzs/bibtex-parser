@@ -35,6 +35,7 @@ public class BibtexFilter extends BibtexPresenter {
                 }
             }
 
+            System.out.println("\n\n\n");
         }
     }
 
@@ -83,5 +84,6 @@ public class BibtexFilter extends BibtexPresenter {
 
         }
 
+        System.out.println("\n\n\n");
     }
 }

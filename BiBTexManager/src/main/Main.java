@@ -13,7 +13,7 @@ public class    Main {
     public static void main(String [] args  ) throws Exception {
 
 
-       
+
 
         ArrayList<String>  categories = new ArrayList<>();
         ArrayList<String>  authors = new ArrayList<>();
@@ -47,12 +47,14 @@ public class    Main {
                     break;
                 case 'h':
                     System.out.println("\nHello in my Bibtex mini Parser program :) here You can find basic options: \n " +
-                                        "-a : takes an author \n -c : takes a category \n -f : takes a file name" +
-                                        "\n -s : takes a sign builder for the tables\n -h : shows  help \n" +
-                                        "\n -o : defines an option of parsing the file:\n" +
+                                        "-a <name> : takes an author \n -c <category> : takes a category \n -f <address> : takes a file name" +
+                                        "\n -s <sign> : takes a sign builder for the tables\n -h : shows  help" +
+                                        "\n -o <option_number> : defines an option of presentation parsed the file:\n" +
                                         "   1 - present the whole parsed file.\n" +
                                         "   2 - present filtered entries by given authors.\n" +
-                                        "   3 - present filtered entries by given categories. ");
+                                        "   3 - present filtered entries by given categories. " +
+                                        "\n\n Example: \n" +
+                                        "\tjava -jar BiBTexManager.jar -f BiBTexManager/src/main/bibFileExample.txt -s \\* -o 1\n" );
                     return;
 
                 default:
