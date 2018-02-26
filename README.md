@@ -35,7 +35,8 @@ java -jar BiBTexManager.jar -f BiBTexManager/src/main/bibFileExample.txt -a "Pau
 Filtering by more than one author name:
 
 ```
- java -jar BiBTexManager.jar -f BiBTexManager/src/main/bibFileExample.txt -a "Paul Pot" -a "Leslie A. Aamport" -s \* -o 2
+ java -jar BiBTexManager.jar -f BiBTexManager/src/main/bibFileExample.txt -a "Paul Pot" 
+ -a "Leslie A. Aamport" -s \* -o 2
 ```
 
 Filtering by category:
@@ -46,7 +47,8 @@ java -jar BiBTexManager.jar -f BiBTexManager/src/main/bibFileExample.txt -c arti
 
 Filter by more than one category:
 ```
-java -jar BiBTexManager.jar -f BiBTexManager/src/main/bibFileExample.txt -c article -c booklet -s \* -o 3
+java -jar BiBTexManager.jar -f BiBTexManager/src/main/bibFileExample.txt -c article 
+-c booklet -s \* -o 3
 ```
 
 
