@@ -3,7 +3,7 @@ Parser in Java, converts BibTex file to object structure, allows to filter and p
 
 ## Getting Started
 
-The simplest way to try this app is download the jar file and run it from you command line.
+The simplest way to try this app is download the jar file and run it from Your command line.
 
 Basic option this app can take: 
 
@@ -35,8 +35,7 @@ java -jar BiBTexManager.jar -f BiBTexManager/src/main/bibFileExample.txt -a "Pau
 Filtering by more than one author name:
 
 ```
- java -jar BiBTexManager.jar -f BiBTexManager/src/main/bibFileExample.txt -a "Paul Pot" 
- -a "Leslie A. Aamport" -s \* -o 2
+java -jar BiBTexManager.jar -f BiBTexManager/src/main/bibFileExample.txt -a "Paul Pot" -a "Leslie A. Aamport" -s \* -o 2
 ```
   
 Filtering by category:
@@ -47,8 +46,7 @@ java -jar BiBTexManager.jar -f BiBTexManager/src/main/bibFileExample.txt -c arti
   
 Filtering by more than one category:
 ```
-java -jar BiBTexManager.jar -f BiBTexManager/src/main/bibFileExample.txt -c article 
--c booklet -s \* -o 3
+java -jar BiBTexManager.jar -f BiBTexManager/src/main/bibFileExample.txt -c article -c booklet -s \* -o 3
 ```
   
 
