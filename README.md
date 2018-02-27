@@ -3,7 +3,7 @@ Parser in Java, converts BibTex file to object structure, allows to filter and p
 
 ## Getting Started
 
-The simplest way to try this app is download the jar file and run it from Your command line.
+The simplest way to try this app is downloading the jar file and running it from Your command line.
 
 Basic option this app can take: 
 
